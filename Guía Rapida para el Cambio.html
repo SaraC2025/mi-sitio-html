@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Infografía Interactiva: Guía Rápida para el Cambio Organizacional</title>
+<style>
+:root{
+ --clr-primary:#004AAD;
+ --clr-secondary:#00A4E0;
+ --clr-light:#F4F8FF;
+ --clr-dark:#1A1A1A;
+ --clr-success:#28A745;
+ --clr-warning:#FFC107;
+}
+body{font-family: Arial, sans-serif; margin:0; background:var(--clr-light); color:var(--clr-dark);}
+header{background:var(--clr-primary); color:white; padding:1.5rem; text-align:center;}
+h1{margin:0; font-size:2rem;}
+section{padding:2rem; max-width:1000px; margin:auto;}
+.card{background:white; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:1.5rem; margin-bottom:2rem;}
+.card h2{margin-top:0; color:var(--clr-primary);}
+.details-container details{margin-bottom:1rem;}
+details summary{cursor:pointer; font-weight:bold;}
+.models{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1rem;}
+#quiz{padding:1rem;}
+.question{margin-bottom:1rem;}
+button{background:var(--clr-secondary); color:white; border:none; padding:0.5rem 1rem; border-radius:8px; cursor:pointer;}
+button:hover{background:var(--clr-primary);}
+#result{margin-top:1rem; font-weight:bold;}
+footer{background:var(--clr-primary); color:white; text-align:center; padding:1rem;}
+table{width:100%; border-collapse:collapse;}
+th,td{padding:0.5rem; border:1px solid #ddd;}
+th{background:var(--clr-secondary); color:white;}
+tbody tr:nth-child(even){background:#fafafa;}
+</style>
+</head>
+<body>
+<header>
+<h1>Guía Rápida para el Cambio Organizacional</h1>
+<p>Comparación interactiva de los principales modelos y metodologías de gestión del cambio</p>
+</header>
+
+<section class="card">
+<h2>Modelos Clave</h2>
+<div class="models">
+<div class="details-container">
+<details>
+<summary>Modelo de Kurt Lewin (3 Fases)</summary>
+<ol>
+<li><strong>Descongelar</strong>: Preparar la organización y cuestionar el status quo.</li>
+<li><strong>Cambiar</strong>: Implementar la nueva dirección, procesos o comportamientos.</li>
+<li><strong>Recongelar</strong>: Consolidar el cambio para que se convierta en la nueva norma.</li>
+</ol>
+<a href="https://es.wikipedia.org/wiki/Kurt_Lewin" target="_blank">Leer más</a>
+</details>
+</div>
+
+<div class="details-container">
+<details>
+<summary>Modelo de 8 pasos de Kotter</summary>
+<ol>
+<li>Crear sentido de urgencia</li>
+<li>Formar coalición líder</li>
+<li>Desarrollar visión y estrategia</li>
+<li>Comunicar visión del cambio</li>
+<li>Eliminar obstáculos</li>
+<li>Generar victorias a corto plazo</li>
+<li>Sostener aceleración</li>
+<li>Anclar nuevos enfoques en la cultura</li>
+</ol>
+<a href="https://www.kotterinc.com/methodology/8-steps/" target="_blank">Leer más</a>
+</details>
+</div>
+
+<div class="details-container">
+<details>
+<summary>Modelo ADKAR</summary>
+<ol>
+<li><strong>A</strong>wareness (Conciencia)</li>
+<li><strong>D</strong>esire (Deseo)</li>
+<li><strong>K</strong>nowledge (Conocimiento)</li>
+<li><strong>A</strong>bility (Habilidad)</li>
+<li><strong>R</strong>einforcement (Refuerzo)</li>
+</ol>
+<a href="https://www.prosci.com/methodology/adkar" target="_blank">Leer más</a>
+</details>
+</div>
+</div>
+</section>
+
+<section class="card">
+<h2>Metodología Kaizen</h2>
+<p>Kaizen es una filosofía de mejora continua centrada en pequeños cambios incrementales realizados de forma constante por todos los miembros de la organización.</p>
+<ul>
+<li>Enfoque en procesos, no en resultados</li>
+<li>Participación de todos</li>
+<li>Cultura de retroalimentación y experimentación</li>
+<li>Pequeños pasos → grandes mejoras a largo plazo</li>
+</ul>
+<a href="https://en.wikipedia.org/wiki/Kaizen" target="_blank">Leer más</a>
+</section>
+
+<section class="card">
+<h2>¿Cuándo usar cuál?</h2>
+<table>
+<thead><tr><th>Escenario</th><th>Modelo más adecuado</th><th>Por qué</th></tr></thead>
+<tbody>
+<tr><td>Cambio estratégico de gran alcance</td><td>Kotter</td><td>Estructura paso a paso para grandes transformaciones y alineación cultural.</td></tr>
+<tr><td>Mejoras graduales de procesos</td><td>Kaizen</td><td>Fomenta la mejora continua con participación de todos.</td></tr>
+<tr><td>Necesidad de cambio conductual rápido</td><td>Kurt Lewin</td><td>Proceso sencillo de tres fases para romper hábitos y estabilizar nuevos.</td></tr>
+<tr><td>Gestión del cambio centrada en individuos</td><td>ADKAR</td><td>Aborda conciencia, deseo y refuerzo a nivel personal.</td></tr>
+<tr><td>Enfoque integral</td><td>Combinación</td><td>Usar Kaizen para mejoras continuas dentro de un marco Kotter, reforzando etapas con ADKAR.</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="card">
+<h2>Autoevaluación Rápida</h2>
+<div id="quiz">
+<div class="question">
+<p>1. ¿Qué modelo se centra en la gestión del cambio a nivel individual mediante la conciencia, deseo y refuerzo?</p>
+<label><input type="radio" name="q1" value="Kurt"> Kurt Lewin</label><br>
+<label><input type="radio" name="q1" value="Kotter"> Kotter</label><br>
+<label><input type="radio" name="q1" value="ADKAR"> ADKAR</label>
+</div>
+<div class="question">
+<p>2. ¿Cuál metodología promueve mejoras incrementales y continuas realizadas por todos los empleados?</p>
+<label><input type="radio" name="q2" value="Kaizen"> Kaizen</label><br>
+<label><input type="radio" name="q2" value="Kotter"> Kotter</label><br>
+<label><input type="radio" name="q2" value="ADKAR"> ADKAR</label>
+</div>
+<div class="question">
+<p>3. Selecciona el modelo con solo tres fases: Descongelar, Cambiar y Recongelar.</p>
+<label><input type="radio" name="q3" value="Kurt"> Kurt Lewin</label><br>
+<label><input type="radio" name="q3" value="Kotter"> Kotter</label><br>
+<label><input type="radio" name="q3" value="ADKAR"> ADKAR</label>
+</div>
+<button onclick="checkQuiz()">Comprobar</button>
+<div id="result"></div>
+</div>
+</section>
+
+<footer>
+<p>© 2025 Guía Rápida para el Cambio — Diseñado para fines educativos</p>
+</footer>
+
+<script>
+function checkQuiz(){
+ let score=0;
+ const answers={q1:'ADKAR',q2:'Kaizen',q3:'Kurt'};
+ for(const [q,correct] of Object.entries(answers)){
+  const radios=document.getElementsByName(q);
+  for(const r of radios){
+   if(r.checked){
+    if(r.value===correct) score++;
+   }
+  }
+ }
+ const result=document.getElementById('result');
+ result.textContent='Tu puntuación: '+score+'/3';
+ result.style.color= score===3 ? 'var(--clr-success)' : 'var(--clr-warning)';
+}
+</script>
+
+</body>
+</html>
